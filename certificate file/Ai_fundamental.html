@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सर्टिफिकेट गैलरी - Certificate Showcase</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gold: #d4af37;
+            --secondary-gold: #f3e5ab;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-glow: rgba(212, 175, 55, 0.35);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 25%),
+                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 25%);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            color: var(--primary-gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px var(--accent-glow);
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Certificate Container / Card */
+        .certificate-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            max-width: 850px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
+                        0 0 0 1px rgba(212, 175, 55, 0.3);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8),
+                        0 0 25px var(--accent-glow);
+        }
+
+        /* Frame Effect around Image */
+        .image-frame {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid var(--primary-gold);
+            background: #000;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+        .certificate-card:hover .image-frame img {
+            transform: scale(1.02);
+        }
+
+        /* Gold Decorative Corners */
+        .corner-decoration {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border: 3px solid var(--primary-gold);
+            z-index: 2;
+            pointer-events: none;
+        }
+        .top-left { top: 12px; left: 12px; border-right: none; border-bottom: none; }
+        .top-right { top: 12px; right: 12px; border-left: none; border-bottom: none; }
+        .bottom-left { bottom: 12px; left: 12px; border-right: none; border-top: none; }
+        .bottom-right { bottom: 12px; right: 12px; border-left: none; border-top: none; }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #d4af37, #aa7c11);
+            color: #0f172a;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #f3e5ab, #d4af37);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--primary-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-gold);
+            color: #0f172a;
+            transform: translateY(-2px);
+        }
+
+        /* Modal / Lightbox (Full Screen View) */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.92);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(8px);
+            padding: 20px;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            border: 2px solid var(--primary-gold);
+            box-shadow: 0 0 30px var(--accent-glow);
+        }
+
+        .lightbox .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .lightbox .close-btn:hover {
+            color: var(--primary-gold);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6rem; }
+            .certificate-card { padding: 14px; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><i class="fa-solid fa-award"></i> Certificate Showcase</h1>
+        <p>प्रमाणपत्र विवरण एवं प्रदर्शन</p>
+    </header>
+
+    <!-- Certificate Showcase Card -->
+    <div class="certificate-card">
+        <!-- Frame with Decorative Corners -->
+        <div class="image-frame">
+            <div class="corner-decoration top-left"></div>
+            <div class="corner-decoration top-right"></div>
+            <div class="corner-decoration bottom-left"></div>
+            <div class="corner-decoration bottom-right"></div>
+
+            <!-- 📌 नोट: नीचे 'src' में अपने Certificate फोटो का सही नाम या लिंक डालें -->
+            <img src="../image/certificate image/AI Fundamental.jpg " 
+                 alt="Certificate Image" 
+                 id="certImage"
+                 onclick="openLightbox()">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <!-- Full Screen View Button -->
+            <button class="btn btn-primary" onclick="openLightbox()">
+                <i class="fa-solid fa-expand"></i> फूल स्क्रीन देखें (View Full)
+            </button>
+            
+            <!-- 📌 Index Page Navigation Button (यहाँ अपने Index पेज का फ़ाइल नाम/लिंक डालें) -->
+            <a href="../index.html" class="btn btn-secondary">
+                <i class="fa-solid fa-house"></i>  होम पेज पर जाएं (Go to Home)
+            </a>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Fullview -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightboxImg" src="" alt="Full Certificate">
+    </div>
+
+    <script>
+        function openLightbox() {
+            const certImg = document.getElementById('certImage').src;
+            document.getElementById('lightboxImg').src = certImg;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

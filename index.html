@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeepakFolio — Deepak | CSE Student & Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header>
+  <nav class="wrap">
+    <div class="brand"><div class="mark"><img src="image/logo/deepak.png" alt=""></div>DEEPAK.DEV</div>
+    <div class="navlinks" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#connect">Connect</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">🌙</button>
+    <a href="#contact" class="hire-btn">Hire Me</a>
+    <button class="navbtn" id="navBtn" aria-label="Menu">☰</button>
+  </nav>
+</header>
+ 
+<!-- HERO -->
+<section class="hero" style="border-top:none;">
+  <div class="wrap">
+    <div class="badge"><span class="dot"></span>OPEN TO INTERNSHIPS · 2026</div>
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">01 / PORTFOLIO</div>
+        <h1>DE<span class="cut">EPAK</span></h1>
+        <div class="hero-line"></div>
+        <p class="lede">B.Tech CSE student at GEC Siwan, building real-world web apps, exploring AI, and solving problems one commit at a time.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>5+</b><span>Projects</span></div>
+          <div><b>7+</b><span>Languages</span></div>
+          <div><b>2025</b><span>Batch</span></div>
+        </div>
+      </div>
+ 
+      <div class="bento">
+        <div class="b-main" id="codeBox">
+          <div class="editor-top">
+            <div class="editor-dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
+            <div class="editor-tab">deepak.js</div>
+          </div>
+          <div class="editor-body">
+            <div class="line-numbers" id="lineNumbers"></div>
+            <pre class="code-typer" id="codeTyper"><code id="codeOutput"></code><span class="code-cursor"></span></pre>
+          </div>
+          <div class="cap"><span class="tag">Passion</span><h4>Writing Code</h4></div>
+        </div>
+        <div class="b-side b1" id="webdevBox">
+          <div class="b-tag"><span class="dot"></span>Web Dev</div>
+          <div class="wireframe">
+            <div class="wf-browser-bar">
+              <span class="wf-dot r"></span><span class="wf-dot y"></span><span class="wf-dot g"></span>
+              <div class="wf-url"><span id="wfUrlText"></span><span class="wf-url-cursor"></span></div>
+            </div>
+            <div class="wf-block wf-nav"></div>
+            <div class="wf-row">
+              <div class="wf-block wf-card"></div>
+              <div class="wf-block wf-card"></div>
+            </div>
+            <div class="wf-block wf-line l1"></div>
+            <div class="wf-block wf-line l2"></div>
+            <div class="wf-pointer"></div>
+          </div>
+          <div class="cap"></div>
+        </div>
+        <div class="b-side b2" id="graphBox">
+          <svg class="graph-svg" viewBox="0 0 220 150" preserveAspectRatio="xMidYMid meet">
+            <line class="g-edge" x1="34" y1="112" x2="96" y2="56"></line>
+            <line class="g-edge" x1="96" y1="56" x2="164" y2="94"></line>
+            <line class="g-edge" x1="96" y1="56" x2="120" y2="24"></line>
+            <line class="g-edge" x1="34" y1="112" x2="70" y2="132"></line>
+            <line class="g-edge" x1="164" y1="94" x2="190" y2="60"></line>
+            <circle class="g-node" cx="34" cy="112" r="5"></circle>
+            <circle class="g-node" cx="96" cy="56" r="5"></circle>
+            <circle class="g-node" cx="164" cy="94" r="5"></circle>
+            <circle class="g-node" cx="120" cy="24" r="5"></circle>
+            <circle class="g-node" cx="70" cy="132" r="5"></circle>
+            <circle class="g-node" cx="190" cy="60" r="5"></circle>
+          </svg>
+          <div class="cap">AI &amp; DSA</div>
+        </div>
+        <div class="skills-float">
+          <div class="sf-head"><span>Top Skills</span><span>⋯</span></div>
+          <div class="chip-row">
+            <a class="chip" href="#skill-cpp">C++</a>
+            <a class="chip" href="#skill-python">Python</a>
+            <a class="chip" href="#skill-java">Java</a>
+            <a class="chip" href="#skill-javascript">JS</a>
+            <a class="chip" href="#skill-html">HTML</a>
+          </div>
+          <div class="sf-foot">
+            <span>&lt;/&gt;</span>
+            <div>
+              <b>Active Learner</b>
+              <span>DSA · OS · Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-num">02 /</div>
+    <h2 class="sec-title">About <span class="accent">Deepak</span></h2>
+    <div class="sec-rule"></div>
+    <br><br>
+    <div class="about-grid">
+      <div>
+        <div class="about-text">
+          <p>I'm Deepak, a first-year B.Tech Computer Science &amp; Engineering student at Government Engineering College Siwan (Batch 2025). I'm passionate about building things that live on the internet — from responsive websites to full-stack applications.</p>
+          <p>Currently diving deep into Data Structures &amp; Algorithms, Java, Operating Systems, and Digital Electronics. I participate in hackathons to sharpen my problem-solving skills and collaborate with fellow builders.</p>
+        </div>
+ 
+        <div class="label-sm">Interests</div>
+        <div class="pill-group">
+          <a class="pill" href="#skills">💻 Coding</a>
+          <a class="pill" href="#journey">🤖 AI Exploration</a>
+          <a class="pill" href="#projects">🌐 Web Dev</a>
+          <a class="pill" href="#contact">🎵 Music</a>
+          <a class="pill" href="#contact">🎬 Movies</a>
+          <a class="pill" href="#journey">⚡ Hackathons</a>
+        </div>
+ 
+        <div class="quote-card">
+          <p>"Code is not just syntax — it's a way of thinking, a way of solving, and a way of building the future one function at a time."</p>
+          <footer>DEEPAK — CSE STUDENT, GEC SIWAN</footer>
+        </div>
+      </div>
+ 
+      <div id="skills">
+        <div class="label-sm" style="margin-top:0;">Technical Skills</div>
+        <div class="skill-bar" id="skill-c">
+          <div class="lbl"><span><b>C</b><span class="cat">Systems</span></span><span class="pct">80%</span></div>
+          <div class="track"><div class="fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-bar" id="skill-cpp">
+          <div class="lbl"><span><b>C++</b><span class="cat">Systems</span></span><span class="pct">78%</span></div>
+          <div class="track"><div class="fill" data-w="78"></div></div>
+        </div>
+        <div class="skill-bar" id="skill-python">
+          <div class="lbl"><span><b>Python</b><span class="cat">Scripting</span></span><span class="pct">75%</span></div>
+          <div class="track"><div class="fill" data-w="75"></div></div>
+        </div>
+        <div class="skill-bar" id="skill-java">
+          <div class="lbl"><span><b>Java</b><span class="cat">Backend</span></span><span class="pct">70%</span></div>
+          <div class="track"><div class="fill" data-w="70"></div></div>
+        </div>
+        <div class="skill-bar" id="skill-html">
+          <div class="lbl"><span><b>HTML</b><span class="cat">Frontend</span></span><span class="pct">90%</span></div>
+          <div class="track"><div class="fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-bar" id="skill-css">
+          <div class="lbl"><span><b>CSS</b><span class="cat">Frontend</span></span><span class="pct">85%</span></div>
+          <div class="track"><div class="fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-bar" id="skill-javascript">
+          <div class="lbl"><span><b>JavaScript</b><span class="cat">Frontend</span></span><span class="pct">72%</span></div>
+          <div class="track"><div class="fill" data-w="72"></div></div>
+        </div>
+ 
+        <div class="explore-box">
+          <div class="label-sm">Also Exploring</div>
+          <div class="pill-group" style="margin-bottom:0;">
+            <a class="pill" href="#journey">DSA</a>
+            <a class="pill" href="https://www.canva.com/">Canva</a>
+            <a class="pill" href="https://gamma.app/">Gamma</a>
+            <a class="pill" href="#journey">AI</a>
+            <a class="pill" href="#journey">Git</a>
+            <a class="pill" href="https://www.figma.com/">Figma</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head-row">
+      <div>
+        <div class="sec-num">03 /</div>
+        <h2 class="sec-title">Selected <span class="accent">Projects</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <p class="sec-sub">Real-world applications built from scratch, solving actual problems.</p>
+    </div>
+ 
+    <div class="proj-grid">
+      <div class="pcard project-card" data-project="DeepakFolio" style="background:linear-gradient(155deg,#3a2f22,#0d0d0d);">
+        <img class="pcard-img" src="image/projects/yoga.png" alt="DeepakFolio preview" loading="lazy" onerror="this.style.display='none'">
+        <div class="tags"><span class="featured">Featured</span><span>Web</span></div>
+        <div class="body">
+          <h3>DeepakFolio</h3>
+          <p>A premium personal portfolio website built with Next.js and Tailwind CSS. Showcases projects, skills, and academic journey with dark-mode design and smooth animations.</p>
+          <div class="stack-tags"><a href="#skill-javascript">Next.js</a><a href="#skill-javascript">TypeScript</a><a href="#skill-css">Tailwind CSS</a></div>
+          <a class="project-link" href="https://deepak-kumar-32.github.io/yoga-wellness/" target="_blank" rel="noopener">View Project ↗</a>
+        </div>
+      </div>
+      <div class="pcard project-card" data-project="Food Nagri" style="background:linear-gradient(155deg,#2a2f22,#0d0d0d);">
+        <img class="pcard-img" src="image/projects/food-nagri.jpg" alt="Food Nagri preview" loading="lazy" onerror="this.style.display='none'">
+        <div class="tags"><span>Web</span></div>
+        <div class="body">
+          <h3>Food Nagri</h3>
+          <p>A food ordering and restaurant discovery platform with menu browsing, cart management, and order tracking.</p>
+          <div class="stack-tags"><a href="#skill-html">HTML</a><a href="#skill-css">CSS</a><a href="#skill-javascript">JavaScript</a></div>
+          <a class="project-link" href="https://deepak-kumar-32.github.io/yoga-wellness/">View Project ↗</a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="proj-row3">
+      <div class="pcard project-card" data-project="Digital Certificate Verification" style="background:linear-gradient(155deg,#2a1a1a,#0d0d0d);">
+        <img class="pcard-img" src="image/projects/cert-verification.jpg" alt="Digital Certificate Verification preview" loading="lazy" onerror="this.style.display='none'">
+        <div class="tags"><span>Security</span></div>
+        <div class="body">
+          <h3>Digital Certificate Verification</h3>
+          <a class="project-link" href="#contact">View Project ↗</a>
+        </div>
+      </div>
+      <div class="pcard project-card" data-project="Yoga Wellness" style="background:linear-gradient(155deg,#2a2620,#0d0d0d);">
+        <img class="pcard-img" src="image/projects/yoga-wellness.jpg" alt="Yoga Wellness preview" loading="lazy" onerror="this.style.display='none'">
+        <div class="tags"><span>Web</span></div>
+        <div class="body">
+          <h3>Yoga Wellness</h3>
+          <a class="project-link" href="#contact">View Project ↗</a>
+        </div>
+      </div>
+      <div class="pcard project-card" data-project="Tech Fest Website" style="background:linear-gradient(155deg,#1e1e2a,#0d0d0d);">
+        <img class="pcard-img" src="image/projects/tech-fest.jpg" alt="Tech Fest Website preview" loading="lazy" onerror="this.style.display='none'">
+        <div class="tags"><span>Event</span></div>
+        <div class="body">
+          <h3>Tech Fest Website</h3>
+          <a class="project-link" href="#contact">View Project ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-num">04 /</div>
+    <h2 class="sec-title">Learning <span class="accent">Journey</span></h2>
+    <div class="sec-rule"></div>
+    <br><br>
+    <div class="journey-grid">
+      <div>
+        <div class="jcard">
+          <div class="top-row">
+            <div class="icon-box">🎓</div>
+            <div class="cur-badge">Current</div>
+          </div>
+          <h4>B.Tech in Computer Science &amp; Engineering</h4>
+          <div class="sub">Government Engineering College Siwan<br>Bihar, India</div>
+          <div class="meta-row">
+            <div><span>Admitted</span><b>2025</b></div>
+            <div><span>Stage</span><b>3rd Semester</b></div>
+            <div><span>Duration</span><b>4 Years</b></div>
+          </div>
+        </div>
+        <div class="jcard goal">
+          <div class="icon-box" style="margin-bottom:14px;">↑</div>
+          <div class="goal-label">Career Goal</div>
+          <p>Become a successful software engineer, contributing to impactful products and open-source projects.</p>
+        </div>
+      </div>
+ 
+      <div>
+        <div class="learn-label">Currently Learning</div>
+        <div class="learn-grid">
+          <div class="lcard">
+            <div class="top-row"><div class="icon-box">🔗</div></div>
+            <h4>Data Structures &amp; Algorithms</h4>
+            <p>Arrays, Linked Lists, Trees, Graphs — building problem-solving instincts.</p>
+            <div class="prog-row"><span>Progress</span><span class="pct">55%</span></div>
+            <div class="track"><div class="fill" data-w="55"></div></div>
+          </div>
+          <div class="lcard">
+            <div class="top-row"><div class="icon-box">☕</div></div>
+            <h4>Java Programming</h4>
+            <p>OOP principles, Collections, Exception Handling, and core Java APIs.</p>
+            <div class="prog-row"><span>Progress</span><span class="pct">65%</span></div>
+            <div class="track"><div class="fill" data-w="65"></div></div>
+          </div>
+          <div class="lcard">
+            <div class="top-row"><div class="icon-box">🖥️</div></div>
+            <h4>Operating Systems</h4>
+            <p>Process management, memory allocation, and scheduling algorithms.</p>
+            <div class="prog-row"><span>Progress</span><span class="pct">50%</span></div>
+            <div class="track"><div class="fill" data-w="50"></div></div>
+          </div>
+          <div class="lcard">
+            <div class="top-row"><div class="icon-box">⚡</div></div>
+            <h4>Digital Electronics</h4>
+            <p>Logic gates, Boolean algebra, flip-flops, and combinational circuits.</p>
+            <div class="prog-row"><span>Progress</span><span class="pct">60%</span></div>
+            <div class="track"><div class="fill" data-w="60"></div></div>
+          </div>
+          <div class="lcard wide">
+            <div class="top-row"><div class="icon-box">🏆</div></div>
+            <h4>Hackathons &amp; Problem Solving</h4>
+            <p>Participating in competitive coding events and building under pressure.</p>
+            <div class="prog-row"><span>Progress</span><span class="pct">70%</span></div>
+            <div class="track"><div class="fill" data-w="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="wrap">
+    <div class="sec-head-row">
+      <div>
+        <div class="sec-num">05 /</div>
+        <h2 class="sec-title">Certificates &amp; <span class="accent">Achievements</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <p class="sec-sub">Courses, hackathons, and credentials earned along the way.</p>
+    </div>
+ 
+    <div class="cert-grid">
+      <a class="cert-card" href="certificate file/Introduction_to_Cybersecurity.html" target="_blank" rel="noopener">
+        <div class="cert-top">
+          <div class="cert-icon">🛡️</div>
+          <span class="cert-year">2026</span>
+        </div>
+        <h4>Introduction to Cybersecurity</h4>
+        <div class="cert-issuer">offered by Networking Academy
+through the Cisco Networking Academy program</div>
+        <div class="cert-link">View Certificate ↗</div>
+      </a>
+      <a class="cert-card" href="certificate file/cpp.html" target="_blank" rel="noopener">
+        <div class="cert-top">
+          <div class="cert-icon">🏆</div>
+          <span class="cert-year">2026</span>
+        </div>
+        <h4>Certificate for the Completion of
+Cpp Training</h4>
+        <div class="cert-issuer">EduPyramids, SINE, IIT
+Bombay</div>
+        <div class="cert-link">View Certificate ↗</div>
+      </a>
+      <a class="cert-card" href="certificate file/Ai_fundamental.html" target="_blank" rel="noopener">
+        <div class="cert-top">
+          <div class="cert-icon">🤖</div>
+          <span class="cert-year">2026</span>
+        </div>
+        <h4>Foundations for Understanding AI</h4>
+        <div class="cert-issuer">offered by Government Engineering College, Siwan
+through the Cisco Networking Academy program.</div>
+        <div class="cert-link">View Certificate ↗</div>
+      </a>
+      <a class="cert-card" href="#" target="_blank" rel="noopener">
+        <div class="cert-top">
+          <div class="cert-icon">🏆</div>
+          <span class="cert-year">2025</span>
+        </div>
+        <h4>Smart India Hackathon — Participant</h4>
+        <div class="cert-issuer">Government of India</div>
+        <div class="cert-link">View Certificate ↗</div>
+      </a>
+      <a class="cert-card" href="#" target="_blank" rel="noopener">
+        <div class="cert-top">
+          <div class="cert-icon">☕</div>
+          <span class="cert-year">2025</span>
+        </div>
+        <h4>Java Programming Masterclass</h4>
+        <div class="cert-issuer">Udemy</div>
+        <div class="cert-link">View Certificate ↗</div>
+      </a>
+      <a class="cert-card" href="#" target="_blank" rel="noopener">
+        <div class="cert-top">
+          <div class="cert-icon">🔐</div>
+          <span class="cert-year">2024</span>
+        </div>
+        <h4>Intro to Cybersecurity</h4>
+        <div class="cert-issuer">Cisco Networking Academy</div>
+        <div class="cert-link">View Certificate ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+ 
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head-row">
+      <div>
+        <div class="sec-num">06 /</div>
+        <h2 class="sec-title">Gallery &amp; <span class="accent">Moments</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <p class="sec-sub">Snapshots from hackathons, campus life, and Travel &amp; Exploration .</p>
+    </div>
+ 
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-caption="Present our project">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo1.jpg</span></div>
+        <img src="image/my gallery section/image1.jpeg" alt="Present our project" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Make hackathon ppt">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo2.jpg</span></div>
+        <img src="image/my gallery section/image2.jpeg" alt="Make hackathon ppt" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Mountain view sindhuli,nepal">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo3.jpg</span></div>
+        <img src="image/my gallery section/image3.jpeg" alt="Mountain view sindhuli,nepal" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Working Time">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo4.jpg</span></div>
+        <img src="image/my gallery section/image4.jpeg" alt="Working Time" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Hackathon presentation">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo5.jpg</span></div>
+        <img src="image/my gallery section/image5.png " alt="hackathon presentation" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Temple view">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo6.jpg</span></div>
+        <img src="image/my gallery section/image6.png" alt="Temple view" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Fresher party day">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo7.jpg</span></div>
+        <img src="image/my gallery section/image7.png" alt="Fresher party day" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="gallery-item" data-caption="Pashupati Nath Temple, Nepal">
+        <div class="gallery-placeholder"><span class="gp-icon">🖼️</span><span class="gp-text">Add photo8.jpg</span></div>
+        <img src="image/my gallery section/image8.png" alt="Pashupati Nath Temple, Nepal" loading="lazy" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONNECT -->
+<section id="connect">
+  <div class="wrap">
+    <div class="sec-num">07 /</div>
+    <h2 class="sec-title">Let's <span class="accent">Connect</span></h2>
+    <div class="sec-rule"></div>
+    <br><br>
+    <div class="social-grid">
+      <a class="social-item" href="https://github.com/deepak-kumar-32" target="_blank" rel="noopener">
+        <div class="si-icon">🐙</div>
+        <div class="si-txt"><span>GitHub</span><b>@deepak-kumar-32</b></div>
+        <div class="si-arrow">↗</div>
+      </a>
+      <a class="social-item" href="https://www.linkedin.com/in/deepak-kumar-562158371?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">
+        <div class="si-icon">in</div>
+        <div class="si-txt"><span>LinkedIn</span><b>Deepak Kumar</b></div>
+        <div class="si-arrow">↗</div>
+      </a>
+     <a class="social-item" href="https://www.geeksforgeeks.org/profile/deepakcse?tab=overview" target="_blank" rel="noopener">
+  <div class="si-icon">G</div>
+  <div class="si-txt">
+    <span>GeeksforGeeks</span>
+    <b>@deepakcse</b>
+  </div>
+  <div class="si-arrow">↗</div>
+</a>
+      <a class="social-item" href="https://leetcode.com/u/deepak-kumar-32/" target="_blank" rel="noopener">
+        <div class="si-icon">🧩</div>
+        <div class="si-txt"><span>LeetCode</span><b>@deepak-kumar-32</b></div>
+        <div class="si-arrow">↗</div>
+      </a>
+      <a class="social-item" href="https://www.instagram.com/__deepak__0903?stkn=dzViZGh4emphd2lz" target="_blank" rel="noopener">
+        <div class="si-icon">📸</div>
+        <div class="si-txt"><span>Instagram</span><b>@__deepak__0903</b></div>
+        <div class="si-arrow">↗</div>
+      </a>
+      <a class="social-item" href="mailto:deepakcsesiwan@gmail.com">
+        <div class="si-icon">✉</div>
+        <div class="si-txt"><span>Email</span><b>deepakcsesiwan@gmail.com</b></div>
+        <div class="si-arrow">↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-num">08 /</div>
+    <h2 class="sec-title">Get In <span class="accent">Touch</span></h2>
+    <div class="sec-rule"></div>
+    <br><br>
+    <div class="contact-card">
+      <div class="contact-inner">
+        <div>
+          <h3>Let's build something <span class="accent">great together.</span></h3>
+          <p>I'm open to internship opportunities, collaboration on interesting projects, and connecting with fellow developers and tech enthusiasts. Drop a message — I respond within 24 hours.</p>
+          <div class="tag-row">
+            <a href="#contact" class="contact-tag">🎓 Internships</a>
+            <a href="#contact" class="contact-tag">🤝 Collaboration</a>
+            <a href="#journey" class="contact-tag">💬 Mentorship</a>
+            <a href="#projects" class="contact-tag">🚀 Projects</a>
+          </div>
+          <div class="contact-info-list">
+            <div class="ci-row"><span>Email</span><b>deepakcsesiwan@gmail.com</b></div>
+            <div class="ci-row"><span>Location</span><b>Siwan, Bihar, India</b></div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        </form>
+      </div>
+      <div class="avail-bar">
+        <div class="l"><span class="dot"></span>Available for internships and collaborations</div>
+        <div class="r">B.Tech CSE · GEC Siwan · Batch 2025 · Bihar, India</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer class="site-footer">© DEEPAK.DEV Designed &amp; built by Deepak.</footer>
+ 
+<!-- GALLERY LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+  <div class="lightbox-stage">
+    <div class="lightbox-placeholder" id="lightboxPlaceholder">
+      <span class="gp-icon">🖼️</span>
+      <span class="gp-text">Add this photo to see it here</span>
+    </div>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+</div>
+ 
+<div class="top-link"><a href="#" id="topLink" aria-label="Back to top">↑</a></div>
+ 
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+ 
+</body>
+</html>
