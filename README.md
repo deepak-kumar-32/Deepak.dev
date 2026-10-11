@@ -36,12 +36,12 @@ DEEPAK.DEV/
  
 1. Clone the repository
 ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+[   git clone https://github.com/your-username/your-repo-name.git](https://github.com/deepak-kumar-32/Deepak.dev.git)
 ```
  
 2. Go to the project folder
 ```bash
-   cd your-repo-name
+   cd Deepak.dev
 ```
  
 3. Open `index.html` in your browser
@@ -50,16 +50,14 @@ DEEPAK.DEV/
  
 Add your live link here (GitHub Pages, Netlify, Vercel, etc.):
  
-`https://your-live-link.com`
+`[https://your-live-link.com](https://deepak-kumar-32.github.io/Deepak.dev/)`
  
 ## Contact
  
 - GitHub: (https://github.com/deepak-kumar-32))
 - LinkedIn: add your link here
 - Email: add your email here
-## License
- 
-This project is open source and available under the [MIT License](LICENSE).
+
  
 ---
  
