@@ -50,8 +50,7 @@ DEEPAK.DEV/
  
 Add your live link here (GitHub Pages, Netlify, Vercel, etc.):
  
-`[https://your-live-link.com](https://deepak-kumar-32.github.io/Deepak.dev/)`
- 
+-  (https://deepak-kumar-32.github.io/Deepak.dev/)
 ## Contact
  
 - GitHub: (https://github.com/deepak-kumar-32))
